@@ -39,7 +39,7 @@ class Workingbox extends React.Component {
       if(e.keyCode === 27) {
         // Esc
         this.undoHistory()
-      } else if (e.keyCode === 78 && e.ctrlKey){
+      } else if (e.keyCode === 78){
         //Ctrl + N 
         this.incrementContours()
       }
@@ -133,7 +133,6 @@ class Workingbox extends React.Component {
     updateDicomImage(byteArray, filename){
 
       const dataSet = dicomParser.parseDicom(byteArray/*, options */)
-      // const studyInstanceUid = dataSet.string('x0020000d')
       const pixelDataElement = dataSet.elements.x7fe00010
       const rows = parseInt(dataSet.uint16('x00280010'))
       const columns = parseInt(dataSet.uint16('x00280011'))
@@ -189,7 +188,7 @@ class Workingbox extends React.Component {
           <div className="footerbox">
               Mouse left-click: annotate<br />
               Esc: undo <br />
-              Ctrl+N: create new annotation
+              N: create new annotation
           </div>
         </div>
       );
