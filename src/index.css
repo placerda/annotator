@@ -1,13 +1,82 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  .annotator {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    height: 34px;
+    margin-left: 20px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    /* 
+      border: 1px solid #999;
+      line-height: 34px;
+      width: 34px; 
+    */
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .slice-canvas {
+    border:1px solid #000000;
+  }
+  
+  .imageLayer {
+    border:1px solid #000000;
+  }
+
+  .titlebox{
+    margin-top: 5px;    
+    margin-bottom: 10px;    
+  }
+
+  .workingbox{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .toolbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .footerbox{
+    margin-top: 5px;    
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal; 
+  }
+
+  .summary{
+    margin-top: -1px; 
+    margin-bottom: 20px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+  
+  .upload-dicom-button{
+    margin-top: -1px; 
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+  
+  .upload-annotation-button{
+    margin-top: -1px; 
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-right: -1px;  
+  }
+  
+  download-annotation-button{
+    margin-top: -1px; 
+    margin-bottom: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
